@@ -10,6 +10,10 @@ This is a mod for Minetest that gives the plyer a chance to make some nice foods
 
 =-=-=-=-=-=-=
 
+Rename the folder to mtfoods.
+
+=-=-=-=-=-=-=
+
 Code Licence: GPLv3.0+
 http://www.gnu.org/copyleft/gpl.html
 
