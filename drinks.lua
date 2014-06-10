@@ -25,7 +25,7 @@ minetest.register_craftitem("mtfoods:orange_juice", {
 minetest.register_craft({
 	type = "shapeless",
 	output = "mtfoods:orange_juice",
-	recipe = {'mtfoods:glass_flute', 'farming_plus:orange'}
+	recipe = {'mtfoods:glass_flute', ing.orange}
 })
 
 --apple--
@@ -39,7 +39,7 @@ minetest.register_craftitem("mtfoods:apple_juice", {
 minetest.register_craft({
 	type = "shapeless",
 	output = "mtfoods:apple_juice",
-	recipe = {'mtfoods:glass_flute', 'default:apple'}
+	recipe = {'mtfoods:glass_flute', ing.apple}
 })
 
 --Apple Cider--

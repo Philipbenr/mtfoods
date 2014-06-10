@@ -12,9 +12,9 @@ minetest.register_craftitem( "mtfoods:mlt_burger", {
 minetest.register_craft({
     output = "mtfoods:mlt_burger",
     recipe = {
-        {'farming:bread', 'mobs:meat', ''},
+        {ing.bread, ing.meat, ''},
         {'', 'default:junglegrass', ''},
-        {'', 'farming_plus:tomato_item', 'farming:bread'},
+        {'', ing.tomato, ing.bread},
     }
 })
 
@@ -30,7 +30,7 @@ minetest.register_craftitem( "mtfoods:potato_slices", {
 minetest.register_craft({
     output = "mtfoods:potato_slices",
     recipe = {
-        {'farming_plus:potatoe_item'},
+        {ing.potato},
     }
 })
 
@@ -59,7 +59,7 @@ minetest.register_craftitem( "mtfoods:medicine", {
 minetest.register_craft({
 	output = "mtfoods:medicine",
 	recipe = {
-		{'', 'farming:wheat', ''},
+		{'', ing.wheat, ''},
 		{'mtfoods:dandelion_milk', 'default:junglegrass', 'mtfoods:chocolate'},
 		{'', 'vessels:glass_bottle', ''},
 	}
@@ -84,7 +84,7 @@ minetest.register_node( "mtfoods:casserole",{
 minetest.register_craft({
 	output = "mtfoods:casserole",
 	recipe = {
-		{'farming_plus:carrot_item', 'farming_plus:potatoe_item', 'farming_plus:tomato_item'},
-		{'', 'farming:bread', ''},
+		{ing.carrot, ing.potato, ing.tomato},
+		{'', ing.bread, ''},
 	}
 })

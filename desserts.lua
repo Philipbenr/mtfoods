@@ -117,7 +117,7 @@ minetest.register_craft({
 	output = "mtfoods:short_bread",
 	recipe = {
 		{'mtfoods:dandelion_milk'},
-		{'farming:bread'},
+		{ing.bread},
 		{'mtfoods:sugar'},
 	}
 })
@@ -134,7 +134,7 @@ minetest.register_craft({
 	output = "mtfoods:chocolate 5",
 	recipe = {
 		{'mtfoods:sugar', 'mtfoods:dandelion_milk', 'mtfoods:sugar'},
-		{'farming_plus:cocoa_bean', 'farming_plus:cocoa_bean', 'farming_plus:cocoa_bean'},
+		{ing.cocoa, ing.cocoa, ing.cocoa},
 		{'mtfoods:sugar', 'mtfoods:dandelion_milk', 'mtfoods:sugar'},
 	}
 })
@@ -151,8 +151,8 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtfoods:strawberry_shortcake",
 	recipe = {
-		{'mtfoods:cream', 'farming_plus:strawberry_item', 'mtfoods:cream'},
-		{'farming_plus:strawberry_item', 'mtfoods:short_bread', 'farming_plus:strawberry_item'},
+		{'mtfoods:cream', ing.strawberry, 'mtfoods:cream'},
+		{ing.strawberry, 'mtfoods:short_bread', ing.strawberry},
 	}
 })
 
@@ -160,7 +160,7 @@ minetest.register_craft({
 	output = "mtfoods:cake",
 	recipe = {
 		{'', 'mtfoods:sugar', ''},
-		{'mtfoods:dandelion_milk', 'farming:bread', 'mtfoods:dandelion_milk'},
+		{'mtfoods:dandelion_milk', ing.bread, 'mtfoods:dandelion_milk'},
 		{'', 'mtfoods:sugar', ''},
 	}
 })
@@ -176,23 +176,23 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtfoods:carrot_cake",
 	recipe = {
-		{'', 'farming_plus:carrot_item', ''},
-		{'farming_plus:cocoa_bean', 'mtfoods:cake', 'farming_plus:cocoa_bean'},
+		{'', ing.carrot, ''},
+		{ing.cocoa, 'mtfoods:cake', ing.cocoa},
 	}
 })
 
 minetest.register_craft({
 	output = "mtfoods:pie_crust",
 	recipe = {
-		{'farming:bread', 'farming:flour'},
-		{'farming:flour', 'mtfoods:sugar'},
+		{ing.bread, ing.flour},
+		{ing.flour, 'mtfoods:sugar'},
 	}
 })
 
 minetest.register_craft({
 	output = "mtfoods:apple_pie",
 	recipe = {
-		{'default:apple', 'default:apple', 'default:apple'},
+		{ing.apple, ing.apple, ing.apple},
 		{'', 'mtfoods:pie_crust', ''},
 	}
 })
@@ -200,7 +200,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtfoods:rhubarb_pie",
 	recipe = {
-		{'farming_plus:rhubarb_item', 'farming_plus:rhubarb_item', 'farming_plus:rhubarb_item'},
+		{ing.rhubarb, ing.rhubarb, ing.rhubarb},
 		{'', 'mtfoods:pie_crust', ''},
 	}
 })
@@ -208,7 +208,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtfoods:banana_pie",
 	recipe = {
-		{'farming_plus:banana', 'mtfoods:cream', 'farming_plus:banana'},
+		{ing.banana, 'mtfoods:cream', ing.banana},
 		{'', 'mtfoods:pie_crust', ''},
 	}
 })
@@ -216,7 +216,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "mtfoods:pumpkin_pie",
 	recipe = {
-		{'mtfoods:cream', 'farming:pumpkin', 'mtfoods:cream'},
+		{'mtfoods:cream', ing.pumpkin, 'mtfoods:cream'},
 		{'', 'mtfoods:pie_crust', ''},
 	}
 })
