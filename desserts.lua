@@ -221,6 +221,13 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "mtfoods:boston_cream",
+	recipe = {
+		{'mtfoods:cream', 'mtfoods:chocolate', 'mtfoods:cream'},
+		{'', 'mtfoods:pie_crust', ''},
+	}
+})
 
 minetest.register_craft({
 	output = "mtfoods:cookies",

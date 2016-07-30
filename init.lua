@@ -22,7 +22,7 @@ ing = {
 -- Add support for the food mod's ingredient list
 if minetest.get_modpath("food") then
 	ing = {
-		orange = "farming_plus:orange",
+		orange = "group:food_orange",
 		apple = "default:apple",
 		meat = "group:food_meat",
 		bread = "farming:bread",
