@@ -2,8 +2,13 @@
 --By: Philipbenr--
 --Licence: GPLv3--
 
+local orange_ing = "farming_plus:orange"
+if minetest.get_modpath("ethereal") then
+	orange_ing = "ethereal:orange"
+end
+
 ing = {
-	orange = "farming_plus:orange",
+	orange = orange_ing,
 	apple = "default:apple",
 	meat = "mobs:meat",
 	bread = "farming:bread",
@@ -22,7 +27,7 @@ ing = {
 -- Add support for the food mod's ingredient list
 if minetest.get_modpath("food") then
 	ing = {
-		orange = "farming_plus:orange",
+		orange = "group:food_orange",
 		apple = "default:apple",
 		meat = "group:food_meat",
 		bread = "farming:bread",
